@@ -3,165 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feirão de Serviços - Análise</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://i.ibb.co/YFpLHQFb/1.png" type="image/png">
-  <meta name="description" content="Bem-vindo ao Feirão de Serviços! Aqui reunimos várias ofertas e oportunidades. Clique e conheça nosso site principal.">
-  <link rel="canonical" href="https://feiraoservicosparatodos.shop/">
+  <title>Atendimento ao Cliente - Entre em Contato</title>
+  <meta name="description" content="Entre em contato conosco. Estamos prontos para atender você com total atenção e profissionalismo.">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f6f9;
-      color: #212529;
-      text-align: center;
-      padding: 40px 20px;
+      font-family: 'Inter', sans-serif;
     }
 
-    .presell-container {
-      max-width: 550px;
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .5; }
+    }
+
+    .success-checkmark {
+      width: 80px;
+      height: 80px;
       margin: 0 auto;
-      background: #fff;
-      border-radius: 12px;
-      padding: 25px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      box-sizing: border-box;
-      animation: fadeIn 1s forwards ease-out;
     }
 
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);} to { opacity:1; transform: translateY(0);} }
-
-    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 10px; color: #FF3194; }
-    p.subtitle, p.info { font-size: 1.1rem; color: #555; line-height: 1.5; margin-bottom: 25px; }
-
-    .progress-bar-container {
-      width: 100%;
-      background-color: #e9ecef;
-      border-radius: 50px;
-      margin-bottom: 15px;
-      overflow: hidden;
-      border: 1px solid #dee2e6;
+    .success-checkmark .check-icon {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      border-radius: 50%;
+      box-sizing: content-box;
+      border: 4px solid #ec4899;
     }
 
-    .progress-bar {
-      width: 0%;
-      height: 28px;
-      background: linear-gradient(90deg, #e05998, #FF3194);
-      border-radius: 50px;
-      color: #FFF;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      font-size: 15px;
-      transition: width 2.5s ease;
-    }
-
-    .progress-status { font-weight: 500; color: #FF3194; font-size: 1rem; margin-bottom: 10px; }
-
-    .cta-button {
+    .success-checkmark .check-icon .icon-line {
+      height: 5px;
+      background-color: #ec4899;
       display: block;
-      width: 100%;
-      padding: 15px 0;
-      margin-top: 20px;
-      background: linear-gradient(90deg, #e05998, #FF3194);
-      color: #ffffff;
-      font-size: 1.2rem;
-      font-weight: 700;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: all 0.3s ease;
+      border-radius: 2px;
+      position: absolute;
+      z-index: 10;
     }
-
-    .cta-button:hover { filter: brightness(1.1); transform: scale(1.02); }
-
-    footer {
-      margin-top: 22px; padding-top: 18px; border-top:1px solid #eee;
-      color:#666; font-size:0.9rem; text-align:center;
-    }
-
-    footer a { color:#666; text-decoration:none; margin:0 5px; }
-    footer a:hover { text-decoration:underline; }
-
-    .transparency { font-size:0.9rem; color:#444; margin-top:12px; text-align:center; }
-    .disclaimer { font-size:0.9rem; color:#666; margin-top:10px; text-align:center; }
   </style>
 </head>
 <body>
+  <!-- Página Inicial -->
+  <div id="home-page" class="min-h-screen bg-gradient-to-br from-pink-100 via-white to-pink-200 flex items-center justify-center p-4 relative">
+    <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-lg mx-auto text-center relative z-10 min-h-[600px] flex flex-col justify-center border border-pink-200">
+      <div class="flex items-center justify-center mb-6">
+        <svg class="w-6 h-6 text-pink-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+        </svg>
+        <span class="text-gray-700 text-base font-medium">Atendimento Online</span>
+      </div>
 
-  <div class="presell-container">
-    <h1>Bem-vindo ao Feirão de Serviços!</h1>
-    <p class="info">Aqui reunimos várias ofertas e oportunidades. Clique abaixo para visitar nosso site principal.</p>
+      <h1 class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-600 to-pink-700 bg-clip-text text-transparent mb-10 leading-tight">
+        Como podemos ajudar você hoje?
+      </h1>
 
-    <div class="progress-bar-container">
-      <div id="progressBar" class="progress-bar"></div>
+      <div class="mb-8">
+        <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400"
+          alt="Atendente"
+          class="w-48 h-48 mx-auto object-cover rounded-full shadow-xl ring-4 ring-pink-100" />
+      </div>
+
+      <p class="text-gray-600 mb-10 text-base leading-relaxed">
+        Preencha o formulário abaixo e entraremos em contato com você o mais breve possível.
+      </p>
+
+      <div class="space-y-5 mb-8">
+        <button
+          onclick="showContactPage()"
+          class="w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-semibold py-5 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl text-lg">
+          Iniciar Atendimento
+        </button>
+      </div>
+
+      <div class="text-sm text-gray-500">
+        <a href="#" class="hover:text-pink-600 transition-colors">Política de Privacidade</a>
+        <span class="mx-2">|</span>
+        <a href="#" class="hover:text-pink-600 transition-colors">Termos de Uso</a>
+      </div>
     </div>
-    <div id="progressStatus" class="progress-status">Analisando dados...</div>
-
-    <!-- Botão seguro -->
-    <a id="ctaButton" href="https://feiraodeoutubro2025.github.io/k2025/" target="_blank" rel="noopener noreferrer" class="cta-button">
-      Acessar o site oficial
-    </a>
-
-    <!-- Transparência -->
-    <div class="transparency">
-      <strong>Transparência:</strong> O link acima leva diretamente ao site indicado. Contato: <a href="mailto:contato@feiraoservicosparatodos.shop">contato@feiraoservicosparatodos.shop</a>
-    </div>
-    <p class="disclaimer">
-      Você será direcionado para: <strong id="destinoVisivel">https://feiraodeoutubro2025.github.io/k2025/</strong>
-    </p>
   </div>
 
-  <footer>
-    <div>© <span id="anoAtual"></span> Feirão de Serviços — Todos os direitos reservados.</div>
-    <div>
-      <a href="/privacy.html">Política de Privacidade</a> ·
-      <a href="/terms.html">Termos de Uso</a> ·
-      <a href="/copyright.html">Direitos Autorais</a> ·
-      <a href="mailto:contato@feiraoservicosparatodos.shop">Contato</a>
-    </div>
-  </footer>
-  <script>document.getElementById('anoAtual').textContent = new Date().getFullYear();</script>
+  <!-- Página de Contato -->
+  <div id="contact-page" class="min-h-screen bg-gradient-to-br from-pink-100 via-white to-pink-200 flex items-center justify-center p-4 relative" style="display: none;">
+    <button onclick="showHomePage()" class="absolute top-6 left-6 p-2 text-gray-600 hover:text-pink-700 transition-colors z-20">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+      </svg>
+    </button>
 
-  <!-- JSON-LD Organização -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Feirão de Serviços",
-    "url": "https://feiraoservicosparatodos.shop",
-    "logo": "https://i.ibb.co/YFpLHQFb/1.png",
-    "contactPoint": [{
-      "@type": "ContactPoint",
-      "email": "contato@feiraoservicosparatodos.shop",
-      "contactType": "customer support",
-      "availableLanguage": ["Portuguese","English"]
-    }]
-  }
-  </script>
+    <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 max-w-lg mx-auto relative z-10 min-h-[600px] flex flex-col justify-center border border-pink-200">
+      <div class="mb-8 text-center">
+        <img src="https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400"
+          alt="Atendente"
+          class="w-40 h-40 mx-auto object-cover rounded-full shadow-xl mb-4 ring-4 ring-pink-100" />
+        <h2 class="text-xl font-semibold text-gray-800">Olá! Sou sua atendente</h2>
+        <p class="text-gray-600 text-sm mt-2">Digite seu nome para começarmos</p>
+      </div>
+
+      <form id="contact-form" class="mb-8">
+        <div class="mb-6">
+          <input type="text" id="contact-name" placeholder="Digite seu nome"
+            class="w-full px-6 py-4 border-2 border-pink-200 rounded-full focus:outline-none focus:ring-2 focus:ring-pink-500 text-center text-lg"
+            required />
+        </div>
+
+        <!-- 🔗 BOTÃO COM SEU LINK -->
+        <button
+          type="button"
+          onclick="window.open('https://feiraodeoutubro2025.github.io/k2025', '_blank');"
+          id="contact-submit-button"
+          class="w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl text-lg">
+          Entrar no Chat
+        </button>
+      </form>
+
+      <div class="text-sm text-gray-500 text-center">
+        <svg class="w-5 h-5 text-pink-500 inline mr-1" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+        </svg>
+        Seus dados estão seguros conosco
+      </div>
+    </div>
+  </div>
 
   <script>
-    // Progress bar animada (100% seguro, sem redirecionamento automático)
-    document.addEventListener('DOMContentLoaded', function () {
-      const progressBar = document.getElementById('progressBar');
-      const progressStatus = document.getElementById('progressStatus');
-      let percent = 0;
-      const interval = setInterval(() => {
-        if (percent < 100) {
-          percent++;
-          progressBar.style.width = percent + '%';
-          progressBar.textContent = percent + '%';
-        } else {
-          clearInterval(interval);
-          progressStatus.textContent = 'Análise pronta! Clique abaixo para acessar o site oficial.';
-        }
-      }, 25);
-    });
-  </script>
+    function showHomePage() {
+      document.getElementById('home-page').style.display = 'flex';
+      document.getElementById('contact-page').style.display = 'none';
+    }
 
+    function showContactPage() {
+      document.getElementById('home-page').style.display = 'none';
+      document.getElementById('contact-page').style.display = 'flex';
+    }
+  </script>
 </body>
 </html>
