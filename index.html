@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -9,10 +10,16 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
 
     <style>
       /* Reset e configurações básicas */
@@ -491,6 +498,81 @@
         width: 100%;
       }
 
+
+      /* Media Queries - Mobile First */
+      @media (min-width: 768px) {
+        h1 {
+          font-size: 3rem;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+        }
+
+        .hero {
+          padding: 150px 0 80px;
+        }
+
+        .hero-container {
+          flex-direction: row;
+          justify-content: space-between;
+          text-align: left;
+        }
+
+        .hero-image {
+          order: 2;
+          margin-bottom: 0;
+          max-width: 400px;
+        }
+
+        .hero-content {
+          order: 1;
+          max-width: 500px;
+        }
+
+        .about-content {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+
+        .about-images {
+          flex: 0 0 auto;
+          margin-bottom: 0;
+        }
+
+        .about-text {
+          text-align: left;
+        }
+
+      }
+
+      @media (max-width: 768px) {
+        .nav-menu {
+          position: fixed;
+          left: -100%;
+          top: 70px;
+          flex-direction: column;
+          background-color: var(--white);
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+          box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+          padding: 20px 0;
+        }
+
+        .nav-menu.active {
+          left: 0;
+        }
+
+        .nav-item {
+          margin: 15px 0;
+        }
+
+        .about-images {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
     </style>
   </head>
   <body>
@@ -500,11 +582,19 @@
         <a href="#" class="logo">Assessoria Empresarial</a>
         <ul class="nav-menu">
           <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">Quem Somos</a></li>
-          <li class="nav-item"><a href="#services" class="nav-link">Serviços</a></li>
-          <li class="nav-item"><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Depoimentos</a>
+          </li>
           <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contato</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -515,7 +605,7 @@
         <!-- Section 1 - Imagem com Zoom -->
         <div class="hero-image-section">
           <div class="hero-image">
-            <img src="https://link-da-imagem-hospedada" alt="Consultora financeira" />
+            <img src="imagens/https://eficaciacontabilidade.site/imagens/mulheratt.png" alt="Consultora financeira" />
           </div>
         </div>
 
@@ -525,12 +615,350 @@
             <h1>CONSULTA SEGURA E RÁPIDA</h1>
             <p class="hero-subtitle">DESCUBRA SUAS MELHORES CONDIÇÕES AGORA</p>
             <p class="hero-text">Atendimento rápido, seguro e online.</p>
-            <a href="https://feiraodeoutubro2025.github.io/k2025/" class="btn btn-pulse">Quero Consultar Agora</a>
+            <a href="https://feiraodeoutubro2025.github.io/k2025/" class="btn btn-pulse"
+              >Quero Consultar Agora</a
+            >
           </div>
         </div>
       </div>
     </section>
 
-    <!-- O resto do conteúdo do site continua aqui... -->
+    <!-- Quem Somos -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Quem Somos</h2>
+        <div class="about-container">
+          <div class="about-content">
+            <div class="about-images">
+              <div class="about-img">
+                <img src="imagens/https://eficaciacontabilidade.site/imagens/adv1.png" alt="Advogado especialista" />
+              </div>
+              <div class="about-img">
+                <img src="imagens/https://eficaciacontabilidade.site/imagens/adv2.png" alt="Advogada especialista" />
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                <strong>Credibilidade:</strong> Registro ativo no CRC-SC garante
+                conformidade e qualidade técnica em todos os serviços.
+              </p>
+              <p>
+                <strong>Atendimento Personalizado:</strong> Cada cliente recebe
+                atenção individualizada e soluções sob medida para suas
+                necessidades.
+              </p>
+              <p>
+                <strong>Foco em Resultados:</strong> Nossos serviços são
+                orientados para gerar valor e contribuir para o crescimento do
+                seu negócio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefícios dos Nossos Serviços -->
+    <section id="benefits" class="services">
+      <div class="container">
+        <h2 class="section-title">Benefícios dos Nossos Serviços</h2>
+        <p class="section-subtitle">
+          Ao escolher a PACIOLI & EFICÁCIA SERVIÇOS CONTÁBEIS, sua empresa conta com uma parceria
+          estratégica que vai além dos serviços tradicionais, oferecendo valor
+          agregado em cada processo.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-piggy-bank"></i>
+            </div>
+            <h3 class="service-title">Redução de Custos Tributários</h3>
+            <p>
+              Otimizamos sua carga tributária com estratégias legais e eficazes
+              para aumentar a lucratividade da sua empresa.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h3 class="service-title">Informações Gerenciais Precisas</h3>
+            <p>
+              Fornecemos relatórios e insights detalhados que auxiliam na tomada
+              de decisão e na gestão estratégica do seu negócio.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-cpu"></i>
+            </div>
+            <h3 class="service-title">Tecnologia Avançada</h3>
+            <p>
+              Utilizamos ferramentas modernas para automatizar processos e
+              garantir mais eficiência e segurança nos resultados.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-shield-lock"></i>
+            </div>
+            <h3 class="service-title">Compliance Fiscal Garantido</h3>
+            <p>
+              Mantemos todas as suas obrigações fiscais em dia, evitando multas
+              e garantindo total conformidade com a legislação.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-headset"></i>
+            </div>
+            <h3 class="service-title">Suporte Especializado</h3>
+            <p>
+              Nossa equipe está sempre disponível para atender sua empresa com
+              agilidade e conhecimento técnico.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3 class="service-title">Atendimento Personalizado</h3>
+            <p>
+              Cada cliente é único. Oferecemos soluções sob medida, adaptadas às
+              necessidades específicas do seu negócio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">O Que Nossos Clientes Dizem</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-img">
+                <div
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    background-color: #ddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                  "
+                >
+                  <img src="/imagens/https://eficaciacontabilidade.site/imagens/depoimento1.png" alt="" />
+                </div>
+              </div>
+              <div class="testimonial-info">
+                <h4>Maria Silva</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              "Consegui regularizar meu nome em menos de 30 dias. A equipe foi
+              muito atenciosa e explicou todo o processo. Recomendo!"
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-img">
+                <div
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                  "
+                >
+                  <img src="/imagens/https://eficaciacontabilidade.site/imagens/depoimento2.png.png" alt="" />
+                </div>
+              </div>
+              <div class="testimonial-info">
+                <h4>João Santos</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              "Estava com o nome negativado há anos e não sabia por onde
+              começar. A consultoria me orientou e consegui negociar minhas
+              dívidas com descontos excelentes."
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-img">
+                <div
+                  style="
+                    width: 60px;
+                    height: 60px;
+                    background-color: #ddd;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                  "
+                >
+                  <img src="/imagens/https://eficaciacontabilidade.site/imagens/depoimento2.jpeg" alt="" />
+                </div>
+              </div>
+              <div class="testimonial-info">
+                <h4>Ana Costa</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              "Processo 100% digital e seguro. Consegui resolver tudo pelo
+              celular, sem precisar me deslocar. Atendimento excelente!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section (SEO Friendly) -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Como funciona o processo de regularização?
+            </h3>
+            <p class="faq-answer">
+              Analisamos suas pendências em plataforma de consulta informativa.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">
+              Quanto tempo leva para resolver minhas pendências?
+            </h3>
+            <p class="faq-answer">
+              O prazo varia de acordo com o tipo e quantidade de pendências,
+              geralmente entre 24 a 72 horas.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Vocês atuam em todo o Brasil?</h3>
+            <p class="faq-answer">
+              Sim, nosso atendimento é 100% online e atendemos em todo o
+              território nacional.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Preciso pagar algum valor antecipado?</h3>
+            <p class="faq-answer">
+              Não. A primeira análise é gratuita e o pagamento ocorre somente
+              após aprovação do processo.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Quais pendências podem ser negociadas?</h3>
+            <p class="faq-answer">
+              Trabalhamos com protestos, cheques sem fundo, restrições
+              bancárias, entre outras.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Como é feita a análise das restrições?</h3>
+            <p class="faq-answer">
+              Solicitamos informações básicas e realizamos consultas para
+              verificar a melhor possibilidade de desconto em seu acordo.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Meus dados estão seguros com vocês?</h3>
+            <p class="faq-answer">
+              Sim, seguimos a LGPD e protegemos todas as suas informações
+              pessoais.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Quais são os canais de atendimento?</h3>
+            <p class="faq-answer">Atendimento por WhatsApp das 08h às 18h.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-question">Posso acompanhar meu processo?</h3>
+            <p class="faq-answer">
+              Sim, você recebe atualizações frequentes por WhatsApp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="footer-container">
+        <!-- Imagens de Site Seguro -->
+        <div class="security-badges">
+          <img
+            src="imagens/https://eficaciacontabilidade.site/imagens/footer.png"
+            alt="Site Seguro"
+            class="security-badge"
+          />
+        </div>
+
+        <div class="footer-contact">
+          <p><strong>Email:</strong> contato@eficaciacontabilidade.site</p>
+          <p><strong>CNPJ:</strong> 36.028.204/0001-88</p>
+          <p><strong>CRC:</strong> TO-000664/O</p>
+          <p>
+            <strong>Endereço:</strong> Rua Aldacy Gomes, SN - Loteamento Bertaville - Palmas/TO - CEP 77059-034
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="politica.html" class="footer-link"
+            >Política de Privacidade</a
+          >
+          <a href="politica.html" class="footer-link">Termos de Uso</a>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; PACIOLI & EFICÁCIA SERVIÇOS CONTÁBEIS LTDA - Todos os
+            direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
